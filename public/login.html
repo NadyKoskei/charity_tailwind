@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="h-full">
-    <header class="bg-blue-300 px-1 mb-2.5 ">
+  <body class="h-full bg-neutral-100">
+    <header class="bg-blue-300 px-1 mb-3 shadow-xl">
       <nav class="flex container mx-auto items-center py-5">
         <img
           src="assets/images/logo.png"
@@ -26,24 +26,26 @@
       </nav>
     </header>
 
-    <main class="pb-4">
+    <main class="pb-4 pl-3 pr-3">
       <h1 class="text-center font-bold text-2xl">LogIn to your account</h1>
+      <div class="flex flex-col justify-center items-center">
+        <form class="border-2 border-gray-100 bg-white p-4 mt-5 mb-5 w-75 rounded-md shadow-xl">
+          <div>
+            <label for="username">UserName:</label>
+            <input type="text" placeholder="Enter your username" class="w-full text-gray-500 border-2 border-gray-200 rounded-md p-1.5" />
+          </div>
 
-      <form class="flex flex-col justify-center items-center">
-        <div>
-          <label for="username">UserName:</label>
-          <input type="text" placeholder="Enter your username" />
-        </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter your password"  class=""/>
+          </div>
 
-        <div>
-          <label for="password">Password:</label>
-          <input type="password" placeholder="Enter your password" />
-        </div>
-
-        <div>
-          <button type="submit">LogIn</button>
-        </div>
-      </form>
+          <div>
+            <button type="submit" class=" bg-blue-400 ">LogIn</button>
+          </div>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register Here</a></p>
+      </div>
     </main>
 
     <footer class="bg-blue-400 text-center p-2 fixed bottom-0 left-0 w-full">

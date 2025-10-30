@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="h-full">
-    <header class="bg-blue-300 px-1 mb-2.5 ">
+  <body class="h-full bg-neutral-100">
+    <header class="bg-blue-300 px-1 mb-3 shadow-xl">
       <nav class="flex container mx-auto items-center py-5">
         <img
           src="assets/images/logo.png"
@@ -26,7 +26,133 @@
       </nav>
     </header>
 
-    <main class="pb-4"></main>
+    <main class="pb-4 pl-3 pr-3">
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-center font-bold text-2xl">Register to Charity Minds</h1>
+
+        <form action="" method="post" class="mt-5 mb-5 p-4 bg-white border-2 border-gray-100 rounded-md shadow-xl">
+          <div>
+            <label for="firstname">FirstName:</label>
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Enter FirstName"
+              name="firstname"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="lastname">LastName:</label>
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter LastName"
+              name="lastname"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="username">UserName:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter UserName"
+              name="username"
+              required
+            />
+          </div>
+
+          <div id="gender-div">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div id="dob-div">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone:</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter Phone Number"
+              name="phone"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="******"
+              name="password"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="cpassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="cpassword"
+              placeholder="******"
+              name="cpassword"
+              required
+            />
+          </div>
+
+          <div id="terms-div">
+            <input
+              type="checkbox"
+              name="terms"
+              value="agree"
+              required
+              id="terms"
+            />
+            <label for="terms">I agree to the Terms and Conditions</label>
+          </div>
+
+          <div id="policy-div">
+            <input
+              type="checkbox"
+              name="policy"
+              value="agree"
+              required
+              id="policy"
+            />
+            <label for="policy"
+              >I have read and agree to the Privacy Policy</label
+            >
+          </div>
+
+          <div>
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Go to LogIn</a></p>
+      </div>
+    </main>
 
     <footer class="bg-blue-400 text-center p-2 fixed bottom-0 left-0 w-full">
       <p>&copy; 2025 Charity Minds. All rights reserved Arylide.</p>
