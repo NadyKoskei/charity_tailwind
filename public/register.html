@@ -26,11 +26,17 @@
       </nav>
     </header>
 
-    <main class="pb-4 pl-3 pr-3">
+    <main class="pb-4 pl-3 pr-3 mb-10">
       <div class="flex flex-col justify-center items-center">
-        <h1 class="text-center font-bold text-2xl">Register to Charity Minds</h1>
+        <h1 class="text-center font-bold text-2xl">
+          Register to Charity Minds
+        </h1>
 
-        <form action="" method="post" class="mt-5 mb-5 p-4 bg-white border-2 border-gray-100 rounded-md shadow-xl">
+        <form
+          action=""
+          method="post"
+          class="mt-5 mb-5 p-4 bg-white border-2 border-gray-100 rounded-md shadow-xl"
+        >
           <div>
             <label for="firstname">FirstName:</label>
             <input
@@ -39,6 +45,7 @@
               placeholder="Enter FirstName"
               name="firstname"
               required
+              class="form-input"
             />
           </div>
 
@@ -50,6 +57,7 @@
               placeholder="Enter LastName"
               name="lastname"
               required
+              class="form-input"
             />
           </div>
 
@@ -61,12 +69,13 @@
               placeholder="Enter UserName"
               name="username"
               required
+              class="form-input"
             />
           </div>
 
           <div id="gender-div">
             <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
+            <select id="gender" name="gender" required class="form-input">
               <option value="female">Female</option>
               <option value="male">Male</option>
               <option value="other">Other</option>
@@ -75,7 +84,13 @@
 
           <div id="dob-div">
             <label for="dob">Date Of Birth:</label>
-            <input type="date" id="dob" name="dob" required />
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              required
+              class="form-input"
+            />
           </div>
 
           <div>
@@ -86,6 +101,7 @@
               placeholder="Enter Phone Number"
               name="phone"
               required
+              class="form-input"
             />
           </div>
 
@@ -97,6 +113,7 @@
               placeholder="Enter Email"
               name="email"
               required
+              class="form-input"
             />
           </div>
 
@@ -108,6 +125,7 @@
               placeholder="******"
               name="password"
               required
+              class="form-input"
             />
           </div>
 
@@ -119,6 +137,7 @@
               placeholder="******"
               name="cpassword"
               required
+              class="form-input"
             />
           </div>
 
@@ -147,10 +166,12 @@
           </div>
 
           <div>
-            <input type="submit" value="Register" />
+            <input type="submit" value="Register" class="form-btn" />
           </div>
         </form>
         <p>Already have an account? <a href="login.html">Go to LogIn</a></p>
+
+
       </div>
     </main>
 
