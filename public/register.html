@@ -9,20 +9,25 @@
 
   <body class="h-full bg-neutral-100">
     <header class="bg-blue-300 px-1 mb-3 shadow-xl">
-      <nav class="flex container mx-auto items-center py-5">
-        <img
+      <nav class="flex justify-between container mx-auto items-center flex-col py-5 sm:flex-col md:flex-row ">
+        <div class="flex flex-row justify-center items-center gap-2">        
+          <img
           src="assets/images/logo.png"
           alt="Charity Minds Logo"
           class="h-15 w-auto"
-        />
+         />
 
-        <p class="">CHARITY MINDS</p>
+         <p class="">CHARITY MINDS</p>
+       </div>
 
-        <ul class="flex gap-4 text-pink-600 ml-auto">
+       <div class="flex flex-row">        
+         <ul class="flex gap-4 text-pink-600 ml-auto">
           <li><a href="login.html">LogIn</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
-        </ul>
+         </ul>
+       </div>
+
       </nav>
     </header>
 
@@ -37,109 +42,66 @@
           method="post"
           class="mt-5 mb-5 p-4 bg-white border-2 border-gray-100 rounded-md shadow-xl"
         >
-          <div>
-            <label for="firstname">FirstName:</label>
-            <input
-              type="text"
-              id="firstname"
-              placeholder="Enter FirstName"
-              name="firstname"
-              required
-              class="form-input"
-            />
+          
+        <div class="grouped">
+          <div class="form-group">
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" placeholder="Enter you first name" />
           </div>
 
-          <div>
-            <label for="lastname">LastName:</label>
-            <input
-              type="text"
-              id="lastname"
-              placeholder="Enter LastName"
-              name="lastname"
-              required
-              class="form-input"
-            />
+          <div class="form-group">
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" placeholder="Enter your second name" />
           </div>
+        </div>
 
-          <div>
-            <label for="username">UserName:</label>
-            <input
-              type="text"
-              id="username"
-              placeholder="Enter UserName"
-              name="username"
-              required
-              class="form-input"
-            />
-          </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+        </div>
 
-          <div id="gender-div">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required class="form-input">
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div id="dob-div">
-            <label for="dob">Date Of Birth:</label>
-            <input
-              type="date"
-              id="dob"
-              name="dob"
-              required
-              class="form-input"
-            />
-          </div>
-
-          <div>
-            <label for="phone">Phone:</label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="Enter Phone Number"
-              name="phone"
-              required
-              class="form-input"
-            />
-          </div>
-
-          <div>
+        <div class="grouped">
+          <div class="form-group">
             <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter Email"
-              name="email"
-              required
-              class="form-input"
-            />
+            <input type="email" id="email" placeholder="yourmail@gmail.com" />
           </div>
 
-          <div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="+254712345678" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender">
+            <option value="0">--Select Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="grouped">
+          <div class="form-group">
             <label for="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="******"
-              name="password"
-              required
-              class="form-input"
-            />
+            <input type="password" id="password" placeholder="**************" />
           </div>
 
-          <div>
-            <label for="cpassword">Confirm Password:</label>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
             <input
               type="password"
-              id="cpassword"
-              placeholder="******"
-              name="cpassword"
-              required
-              class="form-input"
+              id="confirmPassword"
+              placeholder="**************"
             />
           </div>
+        </div>
 
           <div id="terms-div">
             <input

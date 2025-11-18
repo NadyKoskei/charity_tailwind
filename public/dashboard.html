@@ -9,20 +9,26 @@
 
   <body class="h-full bg-neutral-100">
     <header class="bg-blue-300 px-1 mb-3 shadow-xl">
-      <nav class="flex container mx-auto items-center py-5">
-        <img
-          src="assets/images/logo.png"
-          alt="Charity Minds Logo"
-          class="h-15 w-auto"
-        />
+      <nav
+        class="flex justify-between container mx-auto items-center flex-col py-5 sm:flex-col md:flex-row"
+      >
+        <div class="flex flex-row justify-center items-center gap-2">
+          <img
+            src="assets/images/logo.png"
+            alt="Charity Minds Logo"
+            class="h-15 w-auto"
+          />
 
-        <p class="">CHARITY MINDS</p>
+          <p class="">CHARITY MINDS</p>
+        </div>
 
-        <ul class="flex gap-4 text-pink-600 ml-auto">
-          <li><a href="login.html">LogIn</a></li>
-          <li><a href="register.html">Register</a></li>
-          <li><a href="index.html">Home</a></li>
-        </ul>
+        <div class="flex flex-row">
+          <ul class="flex gap-4 text-pink-600 ml-auto">
+            <li><a href="login.html">LogIn</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -31,23 +37,38 @@
         <h1>Welcome Koskei Nady</h1>
       </div>
 
-      <div id="data-div" class="flex flex-row justify-between items-center mt-3">
-        <div id="users" class=" bg-blue-200 w-25 h-25 flex flex-col justify-center items-center">
+      <div
+        id="data-div"
+        class="mt-3 grid grid-flow-row auto-rows-auto grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5"
+      >
+        <div
+          id="users"
+          class="bg-blue-200 w-50 h-30 flex flex-col justify-center items-center"
+        >
           <h1>1500</h1>
           <h2>Users</h2>
         </div>
 
-        <div id="homes" class=" bg-blue-200 w-25 h-25 flex flex-col justify-center items-center">
+        <div
+          id="homes"
+          class="bg-blue-200 w-50 h-30 flex flex-col justify-center items-center"
+        >
           <h1>300</h1>
           <h2>Homes</h2>
         </div>
 
-        <div id="visitors" class=" bg-blue-200 w-25 h-25 flex flex-col justify-center items-center">
+        <div
+          id="visitors"
+          class="bg-blue-200 w-50 h-30 flex flex-col justify-center items-center"
+        >
           <h1>50,000</h1>
           <h2>Visitors</h2>
         </div>
 
-        <div id="amount" class=" bg-blue-200 w-25 h-25 flex flex-col justify-center items-center">
+        <div
+          id="amount"
+          class="bg-blue-200 w-50 h-30 flex flex-col justify-center items-center"
+        >
           <h1>1,350,000</h1>
           <h2>Donations</h2>
         </div>
